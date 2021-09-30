@@ -14,7 +14,11 @@ include "./main.php";
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <?php
-
+    if($img_name){
+        move_uploaded_file($img, "data/".$img_name);
+    }
+    $query="insert into shop_data(name, comment, price, memo, img) values('$name', '$comment', '$memo', '$img_name')";
+    $result = sql_query($query);
 
 ?>
 <script>
