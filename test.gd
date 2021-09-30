@@ -1,7 +1,8 @@
 <?php
-    echo "hello world!";
+    echo "hello world! \n";
 
-    echo "I am 19 years old.";
-    echo "I am a newbiew php developer";
+    $age = 19;
+    echo "I am ".$age." years old. \n";
+    echo "I am a newbie php developer.\n";
 
     exit();
